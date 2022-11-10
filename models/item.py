@@ -10,3 +10,6 @@ class Item:
 
     def __repr__(self) -> str:
         return json.dumps(self.__dict__)
+    
+    def __eq__(self, __o: object) -> bool:
+        return self.id == __o
